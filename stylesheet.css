@@ -140,6 +140,10 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	display: grid;
+}
+
 header {
 	font-size: 1.5rem;
 }
