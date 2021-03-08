@@ -130,8 +130,14 @@ table {
 
 /* ------------------------------------ */
 
+@font-face {
+	font-family: 'iAWriterQuattroV';
+	src: url('./assets/fonts/iAWriterQuattroV.ttf') format('truetype');
+}
+
 html {
 	box-sizing: border-box;
+	font-family: 'iAWriterQuattroV', sans-serif;
 }
 
 *,
@@ -162,4 +168,23 @@ section {
 
 footer {
 	font-size: 0.75rem;
+}
+
+@media (max-width: 480px) {
+	body {
+		/* How might we account for landscape view? */
+		margin-bottom: 100px;
+	}
+	footer {
+		position: fixed;
+		height: 100px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-bottom: 0px;
+		border-top: 1px double #14141d;
+		border-top-left-radius: 50%;
+		display: grid;
+		place-items: center;
+	}
 }
