@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'iA Writer Quattro';
+	src: url('./assets/fonts/iAWriterQuattroV.ttf') format('truetype');
+	font-weight: 1 999;
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	src: url('./assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
+		format('truetype');
+	font-weight: 1 999;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -130,14 +143,16 @@ table {
 
 /* ------------------------------------ */
 
-@font-face {
-	font-family: 'iAWriterQuattroV';
-	src: url('./assets/fonts/iAWriterQuattroV.ttf') format('truetype');
-}
-
 html {
 	box-sizing: border-box;
-	font-family: 'iAWriterQuattroV', sans-serif;
+	font-family: 'iA Writer Quattro', sans-serif;
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 *,
@@ -148,18 +163,62 @@ html {
 
 body {
 	display: grid;
+	place-items: center;
 }
 
 header {
 	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem 0;
 }
 
 #blurb {
-	font-size: 2rem;
+	font-family: 'Fraunces', serif;
+	font-size: 1.5rem;
+	font-weight: 900;
+	line-height: 2.5rem;
+	text-align: center;
+	padding: 1rem 2rem;
+}
+
+#blurb a {
+	text-decoration: none;
+}
+
+.pinkBackground {
+	background: #e382b5;
+	padding: 4px;
+}
+
+.purpleBackground {
+	background: #9d90cc;
+	padding: 4px;
+}
+
+.blueBackground {
+	background: #85a9cc;
+	padding: 4px;
 }
 
 a {
 	font-size: 1.25rem;
+	color: black;
+}
+
+a:active {
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
+a span:hover {
+	color: blue;
+}
+
+a:visited {
+	color: black;
 }
 
 section {
@@ -168,12 +227,22 @@ section {
 
 footer {
 	font-size: 0.75rem;
+	background-image: linear-gradient(
+		30deg,
+		#c1357e 0% 40%,
+		#675997 40% 60%,
+		#0655a9 60% 100%
+	);
+}
+
+body * {
+	margin: 1rem;
 }
 
 @media (max-width: 480px) {
 	body {
 		/* How might we account for landscape view? */
-		margin-bottom: 100px;
+		margin-bottom: 120px;
 	}
 	footer {
 		position: fixed;
@@ -187,4 +256,25 @@ footer {
 		display: grid;
 		place-items: center;
 	}
+}
+
+header {
+	margin-bottom: 0;
+}
+
+main {
+	margin-top: 0;
+	padding-top: 0 !important;
+}
+
+footer {
+	margin: 0;
+}
+
+#blurb img {
+	margin: 0 !important;
+}
+
+section {
+	scroll-margin-top: 40px;
 }

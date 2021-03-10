@@ -45,21 +45,25 @@
 
 <body>
   <header>Gareth Field ... dot com!</header>
-  <main id="blurb">Web and application developer looking for a remote role with a team that's passionate about what
-    they're building and with values that go beyond programming skills. 6 years coding web, mobile, and serverside.
+  <main id="blurb">
+    <img id="profile-pic" height="100px" width="100px"
+      style="clip-path: polygon(21% 12%, 13% 12%, 13% 21%, 16% 61%, 1% 99%, 100% 100%, 87% 59%, 85% 20%, 82% 12%, 74% 11%); float: left;"
+      src="assets/images/photos/profile-pic.jpg" alt="Gareth saying 'hi' from a bike!" />
+    Gareth is a <a href="#stack"><span class="pinkBackground">web/native app developer and software engineer,</span></a>
+    as well as <a href="#gareth-etc"><span class="purpleBackground">trail ultramarathoner,</span></a><span> </span><a
+      href="#dawa"><span class="blueBackground">dog dad,</span></a> and coffee enthusiast. ☕ Let's build stuff!
   </main>
   <nav id="sidebar">
-    <img id="profile-pic" />
     <ul id="sidebar-links">
       <li>
         <a id="github-link" href="https://github.com/Twitchkidd" target="_blank" rel="noopener">
-          <img src="./assets/images/icons/github.png" height="16px" width="16px" alt="github logo" />
+          <img src="assets/images/icons/github.png" height="16px" width="16px" alt="github logo" />
           <span>GitHub</span>
         </a>
       </li>
       <li>
         <a id="twitter-link" href="https://twitter.com/barefootgareth" target="_blank" rel="noopener">
-          <img src="./assets/images/icons/twitter.svg" height="16px" width="16px" alt="twitter logo" />
+          <img src="assets/images/icons/twitter.svg" height="16px" width="16px" alt="twitter logo" />
           <span>Twitter</span>
         </a>
       </li>
@@ -71,10 +75,114 @@
     </ul>
   </nav>
   <!--https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky_positioning-->
-  <section id="stack">Stack!</section>
-  <section id="companies-and-clients">Companies and clients</section>
-  <section id="side-projects">Side projects</section>
-  <section id="recommended-media">Recommended media</section>
+  <section id="stack">
+    <h2>Stack!</h2>
+    <h3>Primary:</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>React Native (Android and iOS)</li>
+      <li>Node</li>
+      <li>Express</li>
+      <li>MongoDB</li>
+      <li>GraphQL</li>
+      <li>Next</li>
+      <li>Redwood</li>
+      <li>Linode</li>
+      <li>Linux</li>
+      <li>Git and GitHub</li>
+      <li>and Figma!</li>
+    </ul>
+    <h3>And familiar with:</h3>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Redux</li>
+      <li>Gatsby</li>
+      <li>Hosted and Headless WordPress</li>
+      <li>Netlify</li>
+      <li>Digital Ocean</li>
+      <li>AWS</li>
+      <li>GitLab</li>
+      <li>and Sketch!</li>
+    </ul>
+  </section>
+  <section id="companies-and-clients">
+    <h2>Companies and clients!</h2>
+    <h3>Moodbit | NYC | 2019</h3>
+    <p>Developed next version of dashboard for startup. Deployed production React site, including data visualization and
+      user authentication/authorization working with the Slack API and AWS Cognito and DynamoDB.</p>
+    <h3>Logoed | Huntington, NY | 2019</h3>
+    <p>Worked with client on product definition, strategy, and development at a ground-level startup. Used Figma to
+      communicate and collaborate on design and explored React Native and progressive web apps to address interesting
+      technical challenges.</p>
+    <h3>Lyme Art Association | Old Lyme, CT | 2020</h3>
+    <p>Added custom functionality client's website, expanding on their implementation of a Shopify images collection
+      widget using skill with core web languages.</p>
+    <h3>Moodbit | NYC | 2021</h3>
+    <p>Updated series of serverless functions to weather an API change, including unit and integration tests involving
+      AWS API Gateways, SNS Messaging, and Lambdas, PostgreSQL, and the Slack API.</p>
+  </section>
+  <section id="side-projects">
+    <h2>Side projects!</h2>
+    <h3>`master-blaster`</h3>
+    <p>Wrote command-line tool in Python that batch renames primary git branches and updates the remote, including the
+      default branch, as well as syncing local repos with the change. Published to PyPi, looking forward to the 1.1.0
+      release. (<a href="https://github.com/Twitchkidd/master-blaster" target="_blank" rel="noopener">Check out
+        repo!</a>)</p>
+    <h3>My blog/junk drawer website, <a href="https://garethfield.website" target="_blank"
+        rel="noopener">garethfield.website!</a></h3>
+    <p>At the time of launching *this* website, garethfield.com, this won't be up yet, very excited about using <a
+        href="https://redwoodjs.com" target="_blank" rel="noopener">RedwoodJS</a> for this next iteration!</p>
+    <p>It will be home for any writing I do living this dev life, and all the side projects that I will get back to
+      someday (I promise.) 🖖</p>
+    <ul>
+      <li><a href="https://github.com/Twitchkidd/dot-eater" target="_blank" rel="noopener">`dot-eater`</a></li>
+      <li><a href="https://github.com/Twitchkidd/polar-pairs" target="_blank" rel="noopener">`polar-pairs`</a></li>
+      <li><a href="https://github.com/Twitchkidd/bookBoxSort" target="_blank" rel="noopener">`bookBoxSort`</a></li>
+      <li><a href="https://github.com/Twitchkidd/MultiBounce" target="_blank" rel="noopener">MultiBounce</a></li>
+    </ul>
+    <p>Previous versionse of the blog include a version built <a href="https://github.com/Twitchkidd/gfcom-dep-2020"
+        target="_blank" rel="noopener">on NextJS</a> and then previously, <a
+        href="https://github.com/Twitchkidd/gfcom-dep-2020/tree/oldSchool" target="_blank" rel="noopener">on
+        GatsbyJS.</a></p>
+  </section>
+  <section id="recommended-media">
+    <h2>Recommended media!</h2>
+    <p>Check out <a href="https://java-programming.mooc.fi" target="_blank" rel="noopener">The University of Helsinki's
+        Massively Open Online Courses CS1/CS2</a> for learning programming/Java!</p>
+    <p>Also check out courses from <a href="https://wesbos.com" target="_blank" rel="noopener">Wes Bos</a> and <a
+        href="https://leveluptutorials.com" target="_blank" rel="noopener">Scott Tolynski</a> on their respective
+      platforms and their podcast <a href="https://syntax.fm" target="_blank" rel="noopener">Syntax</a> for the tastiest
+      web development treats!</p>
+    <p>Also catch the podcasts <a href="https://spec.fm/podcasts/toolsday" target="_blank" rel="noopener">Toolsday</a>
+      with Una Kravets and Chris Dhanaraj and <a href="https://thecsspodcast.libsyn.com/" target="_blank"
+        rel="noopener">The CSS Podcast</a> with Una Kravets and Adam Argyle.</p>
+    <p>Definitely tune in to the <a href="https://designdetails.fm" target="_blank" rel="noopener">Design Details</a>
+      podcast to keep in touch with the design side of things!</p>
+  </section>
+  <section id="gareth-etc">
+    <h2>Gareth Et Cetera!</h2>
+    <h3>Running</h3>
+    <p>Completed three 50km races, and am aiming for the coveted belt buckle of a 100mi finish. Next step is getting
+      back to ultra distances after a series of personal and athletic calamities. Currently training in the gym with
+      NASM protocols and limiting my running to running with my dog, Dawa. I've got some tricks up my sleeve, though,
+      stay tuned!</p>
+    <h3>Juggling</h3>
+    <p>Todo, post juggling video!</p>
+    <h3>Coffee!</h3>
+    <p>Fun fact, Gareth stays caffeinated in part with the help of a <strong>commercial grade coffee grinder</strong> at
+      home! ¯\_(ツ)_/¯☕</p>
+    <p>Also, he rides his trusty bicycle everywhere, including bringing Dawa on rides around town and to the local
+      exotic locations!</p>
+  </section>
+  <section id="dawa">
+    <img width="160px" height="120px" src="assets/images/photos/dawa-harkness.jpg"
+      alt="Cute puppy at the park in front of the ocean as a ferry goes by, resting."
+      style="border-radius: 1rem; transform: rotate(-5deg);" />
+  </section>
   <footer>© 2021 Gareth Field</footer>
 </body>
 
