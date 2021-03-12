@@ -43,17 +43,19 @@
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
-<body>
-  <header>Gareth Field ... dot com!</header>
-  <main id="blurb">
+<body class="grid">
+  <header class="item item--full">
+    <h1>Gareth Field ... Dot Com!</h1>
+  </header>
+  <main id="blurb" class="item item--contained">
     <img id="profile-pic" height="100px" width="100px"
       style="clip-path: polygon(21% 12%, 13% 12%, 13% 21%, 16% 61%, 1% 99%, 100% 100%, 87% 59%, 85% 20%, 82% 12%, 74% 11%); float: left; shape-outside: circle();"
       src="assets/images/photos/profile-pic.jpg" alt="Gareth saying 'hi' from a bike!" />
-    Gareth is a <a href="#stack"><span class="pinkBackground">web/native app developer and software engineer,</span></a>
+    Gareth is a full-stack <a href="#stack"><span class="pinkBackground">web/native app developer,</span></a>
     as well as <a href="#gareth-etc"><span class="purpleBackground">trail ultramarathoner,</span></a><span> </span><a
       href="#dawa"><span class="blueBackground">dog dad,</span></a> and coffee enthusiast. ☕ Let's build stuff!
   </main>
-  <nav id="sidebar">
+  <nav id="sidebar" class="item item--contained">
     <ul id="sidebar-links">
       <li>
         <a id="github-link" href="https://github.com/Twitchkidd" target="_blank" rel="noopener">
@@ -75,7 +77,7 @@
     </ul>
   </nav>
   <!--https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky_positioning-->
-  <section id="stack">
+  <section id="stack" class="item item--contained">
     <h2>Stack!</h2>
     <h3>Primary:</h3>
     <ul>
@@ -109,7 +111,7 @@
       <li>and Sketch!</li>
     </ul>
   </section>
-  <section id="companies-and-clients">
+  <section id="companies-and-clients" class="item item--contained">
     <h2>Companies and clients!</h2>
     <h3>Moodbit | NYC | 2019</h3>
     <p>Developed next version of dashboard for startup. Deployed production React site, including data visualization and
@@ -125,7 +127,7 @@
     <p>Updated series of serverless functions to weather an API change, including unit and integration tests involving
       AWS API Gateways, SNS Messaging, and Lambdas, PostgreSQL, and the Slack API.</p>
   </section>
-  <section id="side-projects">
+  <section id="side-projects" class="item item--contained">
     <h2>Side projects!</h2>
     <h3>`master-blaster`</h3>
     <p>Wrote command-line tool in Python that batch renames primary git branches and updates the remote, including the
@@ -149,7 +151,7 @@
         href="https://github.com/Twitchkidd/gfcom-dep-2020/tree/oldSchool" target="_blank" rel="noopener">on
         GatsbyJS.</a></p>
   </section>
-  <section id="recommended-media">
+  <section id="recommended-media" class="item item--contained">
     <!-- Todo: Types of Media! -->
     <h2>Recommended media!</h2>
     <p>Check out <a href="https://java-programming.mooc.fi" target="_blank" rel="noopener">The University of Helsinki's
@@ -164,7 +166,7 @@
     <p>Definitely tune in to the <a href="https://designdetails.fm" target="_blank" rel="noopener">Design Details</a>
       podcast to keep in touch with the design side of things!</p>
   </section>
-  <section id="gareth-etc">
+  <section id="gareth-etc" class="item item--contained">
     <h2>Gareth Et Cetera!</h2>
     <h3>Running</h3>
     <p>Completed three 50km races, and am aiming for the coveted belt buckle of a 100mi finish. Next step is getting
@@ -179,7 +181,7 @@
     <p>Also, he rides his trusty bicycle everywhere, including bringing Dawa on rides around town and to the local
       exotic locations!</p>
   </section>
-  <section id="dawa">
+  <section id="dawa" class="item item--contained">
     <img width="160px" height="120px" src="assets/images/photos/dawa-harkness.jpg"
       alt="Cute puppy at the park in front of the ocean as a ferry goes by, resting."
       style="border-radius: 1rem; transform: rotate(-5deg);" />
