@@ -199,16 +199,22 @@ html {
 	scroll-behavior: smooth;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+body {
+	background: var(--lightest);
+	background-image: url('./assets/images/patterns/light-1.png');
+	background-repeat: repeat;
 }
 
 .grid {
@@ -219,35 +225,37 @@ html {
 		minmax(2em, 1fr) [viewport-end];
 	gap: 1em;
 }
+
 .item--contained {
 	grid-column: container;
 }
+
 .item--full {
 	grid-column: viewport;
 	display: inherit;
 	grid-template-columns: inherit;
 }
+
 .item--full > * {
 	grid-column: container;
 }
 
-body {
-	background: var(--lightest);
-	background-image: url('./assets/images/patterns/light-1.png');
-	background-repeat: repeat;
-}
-
 header {
-	font-size: 1.5rem;
-	font-weight: 600;
-	/* padding: 1rem 0; */
-	color: var(--light);
+	min-height: 3.5rem;
+	display: grid;
+	place-items: center;
 	background: var(--darkest);
 	background-image: url('./assets/images/patterns/dark-1.png');
 	background-size: cover;
 }
 
-#blurb {
+header > h1 {
+	color: var(--light);
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+main {
 	font-family: 'Fraunces', serif;
 	font-size: 1.65rem;
 	font-weight: 900;
@@ -257,7 +265,7 @@ header {
 	background: #fefefecc;
 }
 
-#blurb a {
+main a {
 	text-decoration: none;
 	font-size: 1.65rem;
 }
@@ -308,10 +316,6 @@ footer {
 	);
 }
 
-/* body > * {
-	border: 1px solid #333;
-} */
-
 @media (max-width: 480px) {
 	body {
 		/* How might we account for landscape view? */
@@ -331,27 +335,7 @@ footer {
 	}
 }
 
-header {
-	display: grid;
-	place-items: center;
-	min-height: 3.5rem;
-}
-
-header > h1 {
-	font-size: 1rem;
-	font-weight: 900;
-}
-
-main {
-	margin-top: 0;
-	padding-top: 0 !important;
-}
-
-footer {
-	margin: 0;
-}
-
-#blurb img {
+main img {
 	margin: 0 1rem 1rem 0 !important;
 }
 
@@ -366,4 +350,8 @@ section {
 nav {
 	padding: 1rem;
 	background: #fefefecc;
+}
+
+footer {
+	margin: 0;
 }
